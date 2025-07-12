@@ -8,7 +8,7 @@ Welcome to my **personal portfolio** website built using **HTML, CSS, and JavaSc
 
 ## 🌐 Live Demo
 
-🔗 [View Portfolio Online](https://karan-portfolio-zotd.vercel.app/)
+🔗 [View Portfolio Online]()
 
 ---
 
