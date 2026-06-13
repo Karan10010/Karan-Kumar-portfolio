@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Karan Kumar — Software Engineering student specializing in modern frontend development, UI/UX, Next.js, React, and WordPress custom themes.">
     <title>Karan Kumar - Software Engineer & Frontend Developer</title>
 <link rel="shortcut icon" href="assets/images/SmallSquareLogoJpg.jpg" type="image/x-icon">
     <link rel="stylesheet" href="./style.css">
@@ -17,6 +18,21 @@
 </head>
 
 <body>
+
+<!-- Preloader (Lab 06 - Feature 9) -->
+<div id="preloader">
+    <div class="preloader-inner">
+        <div class="preloader-spinner"></div>
+        <p>Loading...</p>
+    </div>
+</div>
+
+<!-- Scroll To Top Button (Lab 06 - Feature 8) -->
+<button id="topBtn" title="Go to top">&#8679;</button>
+
+<!-- Dark/Light Mode Toggle (Lab 06 - Feature 2) -->
+<button id="theme-toggle" title="Toggle Theme">🌙 Dark Mode</button>
+
 <!-- Header Start -->
 <div class="container-fluid mt-3">
     <nav class="navbar header navbar-expand-lg navbar-dark navbar-ultra">
@@ -50,9 +66,10 @@
             <div class="hero-content">
                 <h1>Karan Kumar</h1>
                 <h2>Software Engineer & Frontend Developer</h2>
+                <!-- Typing Animation (Lab 06 - Feature 3) -->
+                <h3 class="typing-text"></h3>
                 <p>
-                    I’m a Software Engineering student at SMI University with strong skills in HTML, CSS, JavaScript, and React. Passionate
- about learning new technologies and building user-friendly websites. 
+                    I’m a Software Engineering student at SMI University building high-performance, pixel-perfect experiences with React, Next.js, Node.js, Tailwind CSS, and Bootstrap. I create premium UI/UX-first interfaces that feel fast, clean, and ready for modern product teams.
                 </p>
                 <a href="assets/documents/Karan Kumar Resume1.pdf" class="cta-button" download>Download CV</a>
             </div>
@@ -64,148 +81,319 @@
 
 
     <!-- About Section -->
-    <section id="about">
+    <section id="about" class="reveal">
         <h2 class="section-title">About Me</h2>
         <div class="about-content">
             <div class="hero-image">
                 <img src="assets/images/m3.webp" alt="Karan Kumar" />
             </div>
             <div class="about-text">
-                <p>Hello! I'm Karan Kumar,  currently pursuing a degree in Software Engineering at SMI University. I have a solid foundation in HTML, CSS, JavaScript, and React, and I’m passionate about exploring new technologies and creating user-focused web applications.</p>
+                <p>Hello! I'm Karan Kumar, a Software Engineering student building high-performance web experiences with React, Next.js, Node.js, and modern UI/UX systems. I focus on creating interfaces that look premium, feel intuitive, and perform beautifully across devices.</p>
 
-                <p>"I gained hands-on experience in frontend web development through internships at DevelopersHub Corporation (3 months, remote) and YoungDev Intern (1 month). Throughout these internships, I worked on designing and developing user-friendly web pages using HTML, CSS, JavaScript, and React. I also learned how to work within team environments, meet deadlines, and apply best practices in writing clean and maintainable code."
-                </p>
-
-                <p>I believe in continuous learning and staying updated with the latest technologies in the Software
-                    engineering ecosystem. My goal is to contribute to projects that make a meaningful impact through
-                    data-driven decision making.</p>
+                <p>Today, I bridge modern frontend workflows with CMS platforms like WordPress and Elementor, approaching custom theme development, headless CMS concepts, and performance optimization with the same care I apply to every user experience.</p>
             </div>
         </div>
+
+        <!-- Education Table (Lab 04 Requirement) -->
+        <article class="education-article">
+            <h3 class="education-heading">Education &amp; Personal Info</h3>
+            <table class="info-table">
+                <thead>
+                    <tr>
+                        <th>Field</th>
+                        <th>Details</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Full Name</td>
+                        <td>Karan Kumar</td>
+                    </tr>
+                    <tr>
+                        <td>Degree</td>
+                        <td>Bachelor of Software Engineering</td>
+                    </tr>
+                    <tr>
+                        <td>University</td>
+                        <td>SMI University</td>
+                    </tr>
+                    <tr>
+                        <td>Interests</td>
+                        <td>Web Development, Data Analysis, UI/UX Design</td>
+                    </tr>
+                    <tr>
+                        <td>Career Goal</td>
+                        <td>Full Stack Developer / Software Engineer</td>
+                    </tr>
+                    <tr>
+                        <td>Email</td>
+                        <td>khatrikaran243@gmail.com</td>
+                    </tr>
+                    <tr>
+                        <td>GitHub</td>
+                        <td>github.com/Karan10010</td>
+                    </tr>
+                </tbody>
+            </table>
+        </article>
+
     </section>
 
     <!-- Skills Section -->
-    <section id="skills">
+    <section id="skills" class="reveal">
         <h2 class="section-title">Skills & Expertise</h2>
         <div class="skills-grid">
             <div class="skill-card">
-                <h3>Software Engineering</h3>
-                <p>Developing scalable and maintainable software applications using best coding practices.</p>
+                <h3>Modern Frontend</h3>
+                <p>Designing polished, responsive user interfaces with modern JavaScript frameworks.</p>
                 <ul class="skill-list">
-                    <li>HTML5 & CSS3</li>
+                    <li>Next.js & React.js</li>
                     <li>JavaScript (ES6+)</li>
-                    <li>React</li>
-                    <li>Bootstrap & JQuery</li>
-                    <li>Search Engine Optimization (SEO)</li>
+                    <li>Tailwind CSS & Bootstrap</li>
+                    <li>Responsive / mobile-first design</li>
+                    <li>Performance-first UI</li>
                 </ul>
             </div>
 
             <div class="skill-card">
-                <h3>Databases & Storage</h3>
-                <p>Expertise in various database systems and storage solutions</p>
+                <h3>CMS & WordPress</h3>
+                <p>Building flexible content workflows and custom WordPress experiences.</p>
                 <ul class="skill-list">
-                    <li>SQL & MySQL</li>
-                    <li>MongoDB & Cassandra</li>
-                    <li>RESTful APIs</li>
-                    <li>Local Storage</li>
-                    <li>Firebase Realtime Database</li>
+                    <li>WordPress & Elementor</li>
+                    <li>PHP theme/plugin basics</li>
+                    <li>Headless WordPress</li>
+                    <li>Custom theme development</li>
+                    <li>Content optimization</li>
                 </ul>
             </div>
 
             <div class="skill-card">
-                <h3>Programming Languages</h3>
-                <p>Proficient in multiple programming languages</p>
+                <h3>Backend & APIs</h3>
+                <p>Connecting frontend experiences to backend data and service APIs.</p>
                 <ul class="skill-list">
-                    <li>Python & SQL</li>
-                    <li>C++ & C</li>
-                    <li>JavaScript</li>
-                    <li>React.js</li>
-                    <li>Node.js</li>
+                    <li>Node.js & Express</li>
+                    <li>RESTful API design</li>
+                    <li>JSON / Fetch / Axios</li>
+                    <li>Database integration</li>
+                    <li>Deployment automation</li>
                 </ul>
             </div>
 
             <div class="skill-card">
-                <h3>Cloud & DevOps</h3>
-                <p>Experience with cloud platforms and DevOps practices</p>
+                <h3>Design Systems</h3>
+                <p>Creating consistent, accessible systems for premium product delivery.</p>
                 <ul class="skill-list">
-                    <li>Vercel </li>
-                    <li>Netlify</li>
-                    <li>Firebase Hosting</li>
-                    <li>Monitoring tools</li>
-                    <li>Git & Version Control</li>
+                    <li>UI/UX strategy</li>
+                    <li>Accessibility / WCAG</li>
+                    <li>Component-driven interfaces</li>
+                    <li>Figma-to-production workflow</li>
+                    <li>Interaction design</li>
                 </ul>
             </div>
 
             <div class="skill-card">
-                <h3>Data Analysis & Visualization</h3>
-                <p>Transforming data into meaningful insights</p>
+                <h3>Database & Cloud</h3>
+                <p>Working with modern storage platforms and scalable deployments.</p>
                 <ul class="skill-list">
-                    <li>Pandas & NumPy</li>
-                    <li>Tableau & Power BI</li>
-                    <li>Matplotlib & Seaborn</li>
-                    <li>Jupyter Notebooks</li>
-                    <li>Statistical Analysis</li>
+                    <li>MySQL & MongoDB</li>
+                    <li>Supabase & Firebase</li>
+                    <li>Vercel / Netlify</li>
+                    <li>Git & version control</li>
+                    <li>Performance monitoring</li>
                 </ul>
             </div>
 
             <div class="skill-card">
-                <h3>Frontend Development</h3>
-                <p>End-to-end web application development</p>
+                <h3>Optimization & Growth</h3>
+                <p>Improving speed, searchability, and user retention through solid execution.</p>
                 <ul class="skill-list">
-                    <li>React.js & Node.js</li>
-                    <li>Search Engine Optimization</li>
-                    <li>HTML5 & CSS3</li>
-                    <li>RESTful APIs</li>
-                    <li>UI\UX designing</li>
+                    <li>SEO-friendly markup</li>
+                    <li>Core Web Vitals</li>
+                    <li>Cross-browser testing</li>
+                    <li>UX analytics</li>
+                    <li>Quality-first delivery</li>
                 </ul>
             </div>
         </div>
+
+        <!-- Progress Bars (Lab 05 - Feature 9) -->
+        <div class="progress-section">
+            <h3 class="progress-heading">Technical Skill Levels</h3>
+
+            <div class="progress-item">
+                <div class="progress-label">
+                    <span>HTML5 & CSS3</span>
+                    <span>90%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 90%;"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div class="progress-label">
+                    <span>JavaScript</span>
+                    <span>80%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 80%;"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div class="progress-label">
+                    <span>React.js</span>
+                    <span>75%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 75%;"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div class="progress-label">
+                    <span>Python</span>
+                    <span>70%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 70%;"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div class="progress-label">
+                    <span>MySQL & MongoDB</span>
+                    <span>65%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 65%;"></div>
+                </div>
+            </div>
+
+            <div class="progress-item">
+                <div class="progress-label">
+                    <span>Git & Version Control</span>
+                    <span>85%</span>
+                </div>
+                <div class="progress">
+                    <div class="progress-bar" style="width: 85%;"></div>
+                </div>
+            </div>
+        </div>
+
     </section>
 
 <!-- Projects Section -->
-<section id="projects">
+<section id="projects" class="reveal">
   <h2 class="section-title">Projects & Achievements</h2>
+  <p class="section-intro">Featured work that reflects polished UI craftsmanship, responsive UI patterns, and CMS-friendly delivery across real web and WordPress-ready product flows.</p>
+
+  <div class="achievement-highlights">
+    <div class="achievement-item">CMS-ready and WordPress-friendly project design</div>
+    <div class="achievement-item">Backend-connected product experiences with API persistence</div>
+    <div class="achievement-item">Mobile-first responsiveness with polished UI details</div>
+  </div>
+
+  <!-- Project Filter Buttons (Lab 06 - Feature 6) -->
+  <div class="filter-buttons">
+    <button class="filter-btn active" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="web">Web</button>
+    <button class="filter-btn" data-filter="react">React</button>
+    <button class="filter-btn" data-filter="app">App</button>
+  </div>
+
   <div class="projects-grid">
 
-    <!-- Todo-App-With-Backend-Integration -->
-    <div class="project-card">
-      <h3>Todo-App-With-Backend-Integration </h3>
-      <p>A Todo App integrated with a backend server to enable users to create, update, and delete tasks with real-time data synchronization and persistent storage.</p>
-      <a href="https://github.com/Karan10010/Todo-App-With-Backend-Integration" target="_blank">🔗 View on GitHub</a>
+    <!-- Mediflow Starter -->
+    <div class="project-card react web">
+      <div class="project-card-image">
+        <span>Mediflow Starter</span>
+      </div>
+      <h3>Mediflow Starter</h3>
+      <p>A healthcare SaaS starter platform featuring polished UI patterns, scalable frontend structure, and CMS-ready deployment considerations.</p>
+      <p class="project-stack">Tech: React.js, Tailwind CSS, Node.js, API integration, WordPress-ready concepts</p>
+      <div class="project-card-buttons">
+        <a href="https://github.com/Karan10010/mediflow-starter" target="_blank" class="project-link">View Code</a>
+      </div>
     </div>
 
-    <!-- An-Ecommerce-website-made-with-Reactjs  -->
-    <div class="project-card">
-      <h3>An-Ecommerce-website-made-with-Reactjs </h3>
-      <p>Developed a responsive ecommerce platform using React.js, enabling users to browse products, add items to the cart, and securely complete purchases.</p>
-      <a href="https://github.com/Karan10010/An-Ecommerce-website-made-with-Reactjs" target="_blank">🔗 View on GitHub</a>
+    <!-- Todo App With Backend Integration -->
+    <div class="project-card web app">
+      <div class="project-card-image">
+        <span>Todo App</span>
+      </div>
+      <h3>Todo App with Backend</h3>
+      <p>A polished task management experience powered by Express.js backend storage, with real create, update, and completion flows.</p>
+      <p class="project-stack">Tech: JavaScript, Node.js, Express, REST API, responsive design</p>
+      <div class="project-card-buttons">
+        <a href="https://github.com/Karan10010/Todo-App-With-Backend-Integration" target="_blank" class="project-link">View Code</a>
+        <a href="https://todo-frontend-live.vercel.app/" target="_blank" class="project-link project-link-secondary">Live Demo</a>
+      </div>
     </div>
 
-    <!-- Simple-Simon-Game-using-React-and-Tailwind-CSS -->
-    <div class="project-card">
-      <h3>Simple-Simon-Game-using-React-and-Tailwind-CSS</h3>
-      <p>The game is built using React (a JavaScript library for creating user interfaces), and styled with Tailwind CSS (a utility-first CSS framework).</p>
-      <a href="https://github.com/Karan10010/Simple-Simon-Game-using-React-and-Tailwind-CSS" target="_blank">🔗 View on GitHub</a>
+    <!-- Ecommerce Website -->
+    <div class="project-card react web">
+      <div class="project-card-image">
+        <span>Ecommerce UI</span>
+      </div>
+      <h3>React Ecommerce Website</h3>
+      <p>Responsive React storefront with product browsing, cart interactions, and a polished modern shopping experience.</p>
+      <p class="project-stack">Tech: React.js, CSS, responsive layout, client-side state</p>
+      <div class="project-card-buttons">
+        <a href="https://github.com/Karan10010/An-Ecommerce-website-made-with-Reactjs" target="_blank" class="project-link">View Code</a>
+      </div>
+    </div>
+
+    <!-- Simple Simon Game using React and Tailwind CSS -->
+    <div class="project-card react">
+      <div class="project-card-image">
+        <span>Simon Game</span>
+      </div>
+      <h3>Simple Simon Game</h3>
+      <p>Interactive React game experience styled with Tailwind CSS, designed to showcase UI feedback and polished animation timing.</p>
+      <p class="project-stack">Tech: React.js, Tailwind CSS, interactive UI</p>
+      <div class="project-card-buttons">
+        <a href="https://github.com/Karan10010/Simple-Simon-Game-using-React-and-Tailwind-CSS" target="_blank" class="project-link">View Code</a>
+      </div>
     </div>
 
     <!-- Dental Health Website -->
-    <div class="project-card">
+    <div class="project-card web">
+      <div class="project-card-image">
+        <span>Dental Health</span>
+      </div>
       <h3>Dental Health Website</h3>
-      <p>Developed a responsive and user-friendly Dental Health website using HTML, CSS, and JavaScript, focusing on clean UI design and smooth navigation to enhance user experience.</p>
-      <a href="https://ap-tech-medical-app-project.vercel.app/" target="_blank">🔗 Live Demo</a>
+      <p>Responsive healthcare landing page built with HTML, CSS, and JavaScript, focusing on clear service presentation and polished user flow.</p>
+      <p class="project-stack">Tech: HTML, CSS, JavaScript, accessibility-conscious UI</p>
+      <div class="project-card-buttons">
+        <a href="https://ap-tech-medical-app-project.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+      </div>
     </div>
 
     <!-- Personal Portfolio -->
-    <div class="project-card">
-      <h3>Karan-Portfolio</h3>
-      <p>This is my personal Portfolio.</p>
-      <a href="https://karan-portfolio-zotd.vercel.app/" target="_blank">🔗 Live Demo</a>
+    <div class="project-card web">
+      <div class="project-card-image">
+        <span>Portfolio</span>
+      </div>
+      <h3>Karan Portfolio</h3>
+      <p>A refined portfolio site built to showcase design systems, case studies, and WordPress-friendly frontend capabilities.</p>
+      <p class="project-stack">Tech: HTML, CSS, JavaScript, Bootstrap, responsive portfolio layout</p>
+      <div class="project-card-buttons">
+        <a href="https://karan-portfolio-zotd.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+      </div>
     </div>
 
-    <!-- Todo-App -->
-    <div class="project-card">
-      <h3>Todo-App </h3>
-      <p>A Todo App integrated with a backend server to enable users to create, update, and delete tasks with real-time data synchronization and persistent storage.</p>
-      <a href="https://todo-frontend-live.vercel.app/" target="_blank">🔗 Live Demo</a>
+    <!-- Todo App -->
+    <div class="project-card app web">
+      <div class="project-card-image">
+        <span>Todo UI</span>
+      </div>
+      <h3>Todo App</h3>
+      <p>Responsive productivity app built with a strong focus on UX, local persistence, and clean task management interactions.</p>
+      <p class="project-stack">Tech: HTML, CSS, JavaScript, responsive components</p>
+      <div class="project-card-buttons">
+        <a href="https://todo-frontend-live.vercel.app/" target="_blank" class="project-link">Live Demo</a>
+      </div>
     </div>
 
   </div>
@@ -213,19 +401,57 @@
 
 
 
-    <!-- Experience Section -->
-    <section id="experience">
-        <h2 class="section-title">Experience</h2>
-        <div class="experience-card">
-            <h3>Frontend Development Intern</h3>
-            <div class="company">Developershub Corporations</div>
-            <div class="duration">3 months</div>
-            <p>My experience at DeveloperHub Corporation as a frontend intern was very rewarding and enriching. I got to apply my theoretical knowledge to real-world projects, learned to work in a professional team environment, and improved my skills in React and Tailwind CSS. The hands-on tasks helped me understand practical challenges in frontend development and boosted my confidence in coding and collaboration.</p>
+    <!-- Experience / Timeline Section (Lab 05 - Feature 8) -->
+    <section id="experience" class="reveal">
+        <h2 class="section-title">Experience & Education</h2>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Frontend Development Intern</h3>
+                    <span class="timeline-company">DevelopersHub Corporation</span>
+                    <span class="timeline-date">2024 — 3 Months (Remote)</span>
+                    <p>Applied theoretical knowledge to real-world projects. Improved skills in React and Tailwind CSS. Learned to work in a professional team environment and write clean, maintainable code.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Web Development Intern</h3>
+                    <span class="timeline-company">YoungDev Intern</span>
+                    <span class="timeline-date">2024 — 1 Month</span>
+                    <p>Worked on frontend tasks using HTML, CSS, and JavaScript. Learned to meet deadlines and follow team workflows in a structured environment.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>Bachelor of Software Engineering</h3>
+                    <span class="timeline-company">SMI University</span>
+                    <span class="timeline-date">2022 — Present</span>
+                    <p>Studying Software Engineering with focus on web development, data structures, databases, and software design principles.</p>
+                </div>
+            </div>
+
+            <div class="timeline-item">
+                <div class="timeline-dot"></div>
+                <div class="timeline-content">
+                    <h3>WordPress & CMS Integration</h3>
+                    <span class="timeline-company">Custom Theme / Headless CMS</span>
+                    <span class="timeline-date">2024 — Ongoing</span>
+                    <p>Building bridges between modern frontend tooling and WordPress workflows, including Elementor-friendly design, PHP templates, and CMS-ready performance optimization.</p>
+                </div>
+            </div>
+
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="reveal">
         <h2 class="section-title">Get In Touch</h2>
         <div class="contact-content">
             <p>I'm always interested in discussing new opportunities, collaborating on Software engineering & Frontend projects, or
@@ -244,6 +470,42 @@
                     <p>https://github.com/Karan10010</p>
                 </div>
             </div>
+        </div>
+
+        <!-- Contact Form (Lab 04 Requirement) -->
+        <div class="contact-form-wrapper">
+            <h3 class="form-heading">Send Me a Message</h3>
+            <form class="contact-form">
+
+                <div class="form-group">
+                    <label for="contactName">Full Name</label>
+                    <input type="text" id="contactName" name="name" placeholder="Enter your full name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactEmail">Email Address</label>
+                    <input type="email" id="contactEmail" name="email" placeholder="Enter your email" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactSubject">Subject</label>
+                    <select id="contactSubject" name="subject">
+                        <option value="">Select a subject</option>
+                        <option value="job">Job Opportunity</option>
+                        <option value="freelance">Freelance Project</option>
+                        <option value="collaboration">Collaboration</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+
+                <div class="form-group">
+                    <label for="contactMessage">Message</label>
+                    <textarea id="contactMessage" name="message" placeholder="Write your message here..." required></textarea>
+                </div>
+
+                <div class="form-status" aria-live="polite"></div>
+                <button type="submit" class="form-submit-btn">Send Message</button>
+            </form>
         </div>
     </section>
 
@@ -276,7 +538,7 @@
 <!-- Footer End -->
 
 
-    <script src="https://kit.fontawesome.com/your-code.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <script src="./script.js"></script>
 </body>
 
